@@ -2,6 +2,8 @@
 
 Shape Impact is a "Space Impact" clone game coded with vanilla JS.
 
+Play on netlify: https://shape-impact.netlify.app/
+
 ## GUIDE
 
 -   Arrow Left, Arrow Right, Arrow Up and Arrow Down for directions.
