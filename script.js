@@ -157,5 +157,8 @@ function start() {
 
     gameLoop();
 }
-
-start();
+try {
+    start();
+} catch (error) {
+    alert(error);
+}

@@ -45,9 +45,9 @@ export default class Player {
 
     update(input) {
         if (input.keys.has('ArrowLeft') || input.keys.has('swipe left'))
-            this.vx = -3;
+            this.vx = -6;
         else if (input.keys.has('ArrowRight') || input.keys.has('swipe right'))
-            this.vx = 3;
+            this.vx = 6;
         else
             this.vx =
                 this.vx > 0
@@ -55,9 +55,9 @@ export default class Player {
                     : Math.min(0, this.vx + 0.05);
 
         if (input.keys.has('ArrowUp') || input.keys.has('swipe up'))
-            this.vy = -3;
+            this.vy = -6;
         else if (input.keys.has('ArrowDown') || input.keys.has('swipe down'))
-            this.vy = 3;
+            this.vy = 6;
         else
             this.vy =
                 this.vy > 0

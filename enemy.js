@@ -27,25 +27,25 @@ export default class Enemy {
     }
 
     draw(context) {
-        if (this.health > 0) {
+        if (this.health > 0 && context != undefined) {
             context.strokeStyle = 'red';
             //context.strokeRect(this.x, this.y, this.width, this.width);
-
-            context.fillStyle = this.fillColor;
-            //context.fillRect(this.x, this.y, this.width, this.width);
 
             //
 
             context.beginPath();
-            context.roundRect(
-                this.x,
-                this.y,
-                this.width,
-                this.width,
-                this.health
-            );
+            // context.roundRect(
+            //     this.x,
+            //     this.y,
+            //     this.width,
+            //     this.height,
+            //     this.health
+            // );
 
             context.stroke();
+
+            context.fillStyle = this.fillColor;
+            context.fillRect(this.x, this.y, this.width, this.width);
             context.fill();
 
             context.fillStyle = 'white';
